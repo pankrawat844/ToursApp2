@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:paddingLeft="0dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+
+
+        android:layout_width="146dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04"
+        app:srcCompat="@drawable/travellogo" />
+
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="260dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/gradient_end_color"
+        android:text="Register"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtemail" />
+
+    <EditText
+        android:id="@+id/txtnumber"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="8dp"
+        android:width="300dp"
+        android:background="@color/gradient_start_color"
+
+        android:ems="10"
+        android:hint="Username"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:padding="13dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textColorHint="@color/cardview_dark_background"
+        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtname"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:width="300dp"
+        android:background="@color/gradient_start_color"
+        android:ems="10"
+
+        android:hint="Password"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName|textPassword"
+        android:padding="13dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textColorHint="@color/cardview_dark_background"
+
+        app:layout_constraintBottom_toTopOf="@+id/txtemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="Travel Mania"
+        android:textColor="@color/gradient_end_color"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="serif"
+        app:layout_constraintBottom_toTopOf="@+id/txtnumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:background="@color/gradient_start_color"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPersonName"
+        android:paddingLeft="13dp"
+        android:textColorHint="@color/cardview_dark_background"
+        app:layout_constraintBottom_toTopOf="@+id/btnregister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtname" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/gradient_start_color"
+        android:ems="10"
+        android:hint="Mobile"
+        android:inputType="textPersonName"
+        android:paddingLeft="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnumber" />
+
+
+</android.support.constraint.ConstraintLayout>

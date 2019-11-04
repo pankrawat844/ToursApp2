@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/txt_pune"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pune"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/txt_mumbai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mumbai"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/txt_banglore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Banglore"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+
+
+</LinearLayout>

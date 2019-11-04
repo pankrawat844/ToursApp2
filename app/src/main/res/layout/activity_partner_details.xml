@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/holo_gray"
+    tools:context=".Views.PartnerDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+      >
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            app:cardCornerRadius="15dp">
+
+            <ImageView
+                android:id="@+id/txt_partner_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/vicious_1" />
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="12dp">
+
+            <TextView
+                android:id="@+id/txt_partner_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vicious Circle"
+                android:textColor="@color/black"
+
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_part_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="Vashi ,Sector-7"
+
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_part_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="3.4 (100 reviews)"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/txt_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:text="Favourite"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/txt_heart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:text="♡"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/txt_partner_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:text="Book and get 200 credits in your mPAY wallet"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/btn_book"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/offerbutton"
+            android:text="Book Now"
+            android:textColor="@color/purple"
+
+            />
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:elevation="10dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <TextView
+                    android:id="@+id/txt_offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingRight="10dp"
+                    android:text="Pay using mPAY and redeem your credits"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+
+                <Button
+                    android:id="@+id/btn_pay"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/offerbutton"
+                    android:text="PAY NOW"
+                    android:textColor="@color/purple"
+
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About this place"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Open now"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            />
+
+                <TextView
+                    android:id="@+id/txt_partner_timing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="3dp"
+                    android:text="12 PM to 12 AM"
+                    android:textSize="16sp"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Cuisines"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            />
+
+                <TextView
+                    android:id="@+id/txt_partner_cuisines"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="3dp"
+                    android:text="Chinese,North Indian,Sea Food,Thai"
+                    android:textSize="16sp"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Menu"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="5dp"
+            app:cardCornerRadius="15dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tooltipText="SEE ALL"
+                android:background="@drawable/vicious_1" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Average cost"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            />
+
+                <TextView
+                    android:id="@+id/txt_average_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="3dp"
+                    android:text="Cost for two - 1400Rs"
+                    android:textSize="16sp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Address"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            />
+
+                <TextView
+                    android:id="@+id/txt_partner_full_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="3dp"
+                    android:text="Shop Np.2,Sector-7,Vashi,Navi Mumbai-400703"
+                    android:textSize="16sp"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Phone no"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            />
+
+                <TextView
+                    android:id="@+id/txt_partner_phoneno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="3dp"
+                    android:text="+91 9933113344"
+                    android:textSize="16sp"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Need to know"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            />
+
+                <TextView
+                    android:id="@+id/txt_partner_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="3dp"
+                    android:text="Serves -Serves Non Veg,Jain Foods Options."
+                    android:textSize="16sp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:text="Reservation -Recommended"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"></TextView>
+
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                android:orientation="vertical"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Reviews"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:text="Serves -Serves Non Veg,Jain Foods Options."
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp"></TextView>
+
+
+
+
+
+
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="More Info"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Amenities"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+
+                    />
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+<TableRow
+    android:layout_width="match_parent">
+
+                <TextView
+                        android:text="TakeAway"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_done_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:layout_weight="1"
+                    android:layout_column="1"
+                    android:padding="10dp"
+                    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_done_black_24dp"
+        android:drawablePadding="5dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:text="AC" />
+
+
+
+
+
+</TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:text="Lift"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_done_black_24dp"
+                        android:drawablePadding="5dp"
+                        android:layout_weight="1"
+                        android:layout_column="1"
+                        android:padding="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_done_black_24dp"
+                        android:drawablePadding="5dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="Parking" />
+
+
+
+
+
+                </TableRow>
+
+            </TableLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
