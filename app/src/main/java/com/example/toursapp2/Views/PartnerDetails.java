@@ -37,7 +37,7 @@ import java.util.Random;
 public class PartnerDetails extends AppCompatActivity {
 
     FirebaseFirestore firebaseFirestore;
-    Button btnsubmit,btnpay;
+    Button btnsubmit,btnpay,btnshowmap;
     TextView partName,partAddress,partRating,partCost,partCuisines,partDescription,partFullAddress,partPhoneNo,partTimings,heart,txtfav;
     ImageView partImage;
     String name,user,docid;
@@ -62,7 +62,13 @@ public class PartnerDetails extends AppCompatActivity {
         partFullAddress=findViewById(R.id.txt_partner_full_address);
         partImage=findViewById(R.id.txt_partner_image);
         btnpay=findViewById(R.id.btn_pay);
-
+        btnshowmap=findViewById(R.id.show_map);
+        btnshowmap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PartnerDetails.this,ShowMapActivity.class));
+            }
+        });
         cust_id = FirebaseAuth.getInstance().getUid();
         firebaseFirestore= FirebaseFirestore.getInstance();
         book_id=getUID();
