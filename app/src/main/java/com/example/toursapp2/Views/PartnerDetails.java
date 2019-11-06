@@ -66,7 +66,9 @@ public class PartnerDetails extends AppCompatActivity {
         btnshowmap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(PartnerDetails.this,ShowMapActivity.class));
+                Intent intent=new Intent(PartnerDetails.this,ShowMapActivity.class);
+                intent.putExtra("address",partFullAddress.getText().toString());
+                startActivity(intent);
             }
         });
         cust_id = FirebaseAuth.getInstance().getUid();
@@ -242,6 +244,7 @@ public class PartnerDetails extends AppCompatActivity {
                                 partRating.setText(documentSnapshot.get("rating").toString()+"("+documentSnapshot.get("ratingCount").toString()+")");
 
                         //        partTimings.setText(documentSnapshot.get("timings").toString());
+                                if(documentSnapshot.contains("partnerCuisines"))
                                 partCuisines.setText(documentSnapshot.get("partnerCuisines").toString());
                                 partCost.setText(documentSnapshot.get("partnerCost").toString());
                                 partFullAddress.setText(documentSnapshot.get("partnerFullAddress").toString());

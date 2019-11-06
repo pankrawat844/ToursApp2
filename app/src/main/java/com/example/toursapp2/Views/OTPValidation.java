@@ -110,7 +110,7 @@ public class OTPValidation extends AppCompatActivity {
 
     public void sendsms(View v)
     {
-            String number=txtmobile.getText().toString();
+            String number="+91"+txtmobile.getText().toString();
         PhoneAuthProvider.getInstance().verifyPhoneNumber(
                   number,120, TimeUnit.SECONDS,this,mCallback
         );

@@ -5,10 +5,8 @@ import java.util.List;
 import java.util.Locale;
 
 import android.Manifest;
-import android.app.AlertDialog;
 import android.app.Service;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
@@ -18,10 +16,7 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.provider.Settings;
 import android.util.Log;
-
-import com.example.toursapp2.R;
 
 /**
  * Create this Class from tutorial :
@@ -34,7 +29,7 @@ import com.example.toursapp2.R;
 public class GPSTracker extends Service implements LocationListener {
 
     // Get Class Name
-    private static String TAG = GPSTracker.class.getName();
+    private static String TAG = GPSTrackerKt.class.getName();
 
     private final Context mContext;
 
@@ -287,6 +282,8 @@ public class GPSTracker extends Service implements LocationListener {
      * Try to get CountryName
      * @return null or postalCode
      */
+
+
     public String getCountryName(Context context) {
         List<Address> addresses = getGeocoderAddress(context);
         if (addresses != null && addresses.size() > 0) {
